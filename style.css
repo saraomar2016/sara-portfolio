@@ -526,6 +526,46 @@ p {
   padding-top: 18px;
 }
 
+.practice-projects {
+  margin-top: 42px;
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+}
+
+.practice-projects .section-header {
+  max-width: 720px;
+  margin-bottom: 20px;
+}
+
+.practice-projects .section-header h3 {
+  font-size: 1.35rem;
+}
+
+.practice-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 12px;
+}
+
+.practice-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: color-mix(in srgb, var(--surface) 38%, transparent);
+}
+
+.practice-card h4 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.2;
+}
+
+.practice-card p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .project-type,
 .project-meta {
   color: var(--gold);
