@@ -491,7 +491,28 @@ p {
 }
 
 .projects-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+.broader-skills-panel {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
+  gap: 18px 28px;
+  align-items: center;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  background: color-mix(in srgb, var(--surface) 44%, transparent);
+}
+
+.broader-skills-panel p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.broader-skills-tags {
+  justify-content: flex-end;
 }
 
 .project-card {
@@ -695,6 +716,14 @@ p {
 
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .broader-skills-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .broader-skills-tags {
+    justify-content: flex-start;
   }
 }
 
