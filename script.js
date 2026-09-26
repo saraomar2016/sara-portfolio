@@ -1,5 +1,23 @@
 // Future edits: update these project details when Sara wants to revise public case-study wording.
 const projectDetails = {
+  accessControl: {
+    type: "Access Control / Monitoring Integration",
+    title: "Access Control System — Milestone XProtect VMS Plugin",
+    meta: "System Integration | .NET Developer",
+    overview:
+      "An access control system involving a Milestone XProtect VMS plugin, .NET, and Milestone Systems SDK in a monitoring and system integration context.",
+    role:
+      "I contributed to .NET system integration work in an access control and monitoring context.",
+    responsibilities: [
+      "Contribute to .NET integration involving Milestone Systems SDK.",
+      "Work on the access control integration in the Milestone XProtect VMS plugin context."
+    ],
+    outcome:
+      "The project represents access control and monitoring integration work; detailed operational results are not included in this public overview.",
+    technologies: [".NET", "Milestone Systems SDK"],
+    confidentiality:
+      "This overview excludes internal configurations, customer information, proprietary implementation details, source code, and credentials."
+  },
   mandoobi: {
     type: "Enterprise Business Application",
     title: "Mandoobi Sales Tracking Platform",

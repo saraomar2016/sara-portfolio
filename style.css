@@ -734,6 +734,19 @@ p {
 }
 
 @media (max-width: 980px) {
+  /* Keep the longer Full Stack role aligned with navigation on tablets. */
+  .nav-shell {
+    gap: 16px;
+  }
+
+  .nav-panel {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    padding-inline: 8px;
+  }
+
   h1 {
     font-size: 3rem;
   }
