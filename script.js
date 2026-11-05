@@ -1,132 +1,192 @@
 // Future edits: update these project details when Sara wants to revise public case-study wording.
 const projectDetails = {
-  accessControl: {
-    type: "Access Control / Monitoring Integration",
-    title: "Access Control System — Milestone XProtect VMS Plugin",
-    meta: "System Integration | .NET Developer",
-    overview:
-      "An access control system involving a Milestone XProtect VMS plugin, .NET, and Milestone Systems SDK in a monitoring and system integration context.",
-    role:
-      "I contributed to .NET system integration work in an access control and monitoring context.",
-    responsibilities: [
-      "Contribute to .NET integration involving Milestone Systems SDK.",
-      "Work on the access control integration in the Milestone XProtect VMS plugin context."
-    ],
-    outcome:
-      "The project represents access control and monitoring integration work; detailed operational results are not included in this public overview.",
-    technologies: [".NET", "Milestone Systems SDK"],
-    confidentiality:
-      "This overview excludes internal configurations, customer information, proprietary implementation details, source code, and credentials."
-  },
   mandoobi: {
-    type: "Enterprise Business Application",
-    title: "Mandoobi Sales Tracking Platform",
-    meta: "Sales Operations / Transportation | .NET Backend Developer",
+    type: "Retail & Wholesale Sales Management",
+    title: "Mandoobi Sales Management Platform",
+    meta: "Sales Operations | Freelance .NET Backend Developer",
     overview:
-      "Mandoobi is a sales tracking and workflow management platform used to support sales representatives, vehicles, warehouse and stock movement, operational tracking, live updates, and reporting workflows.",
+      "Mandoobi is a retail and wholesale sales management platform for sales representatives, supervisors, warehouses, and vehicle inventory, covering invoices, quotations, money collection, returns, stock transfers, and price lists.",
     role:
-      "I worked on backend APIs, database design, reporting support, real-time updates, integrations, and backend services that connected desktop and mobile clients with operational workflows.",
+      "I architected and delivered the backend end-to-end within a 4-person team, and implemented the business logic and API integration of the WPF admin application on top of provided UI designs.",
     responsibilities: [
-      "Designed and developed backend APIs for sales and operational workflows.",
-      "Built database structures for tracking sales operations and vehicle-related inventory.",
-      "Implemented real-time updates using SignalR.",
-      "Supported reporting features using RDLC.",
-      "Integrated backend services with desktop and mobile clients.",
-      "Improved reliability and helped support operational visibility."
+      "Built an ASP.NET Core 9 Web API with 70+ controllers on MongoDB, structured with Clean Architecture and Dependency Injection.",
+      "Secured the API with JWT authentication and BCrypt password hashing.",
+      "Implemented real-time updates with a SignalR hub across the admin application and the field sales mobile app.",
+      "Generated PDF quotations with QuestPDF and sent email notifications with MailKit.",
+      "Built 20 bilingual (Arabic/English) RDLC reports, including daily sales, inventory, profit margin, product performance, customer lifetime value, and salesperson performance.",
+      "Implemented multi-company setup, user privileges, regions, and sales heat maps.",
+      "Packaged the WPF admin application as a Windows installer."
     ],
     outcome:
-      "Helped improve operational visibility, organize business data and reporting, and enable real-time updates between connected systems.",
-    technologies: ["C#", "ASP.NET Core Web API", "MongoDB", "SignalR", "WPF", "RDLC Reports", "REST APIs"],
+      "Gave management one platform to run retail and wholesale sales, warehouses, and field teams, with live updates and 20 reports in two languages.",
+    technologies: ["C#", "ASP.NET Core 9", "MongoDB", "JWT", "SignalR", "QuestPDF", "RDLC Reports", "WPF"],
     confidentiality:
       "This case study describes my technical role and responsibilities without exposing source code, private data, credentials, production screenshots, or internal business details."
   },
   monitoring: {
-    type: "Monitoring & Facility Management Solutions",
-    title: "Monitoring & Facility Management Solutions",
-    meta: "Security / Facility Management | .NET Developer",
+    type: "Security & Facility Management",
+    title: "Security & Facility Management Platform",
+    meta: "BMS · VMS · CCC · Entrance · Camera Access | MTI Holding | .NET Backend Developer",
     overview:
-      "A set of related operational solution areas supporting security, monitoring, visitor access, facility workflows, and operational control. The public case study groups the work into BMS, VMS, LPR, and monitoring integrations without exposing internal system details.",
+      "An integrated security platform made of several modules that share backend libraries, APIs, and a real-time SignalR hub.",
     role:
-      "I contributed to .NET application development, database-backed workflows, integration support, and desktop application features for monitoring and facility management use cases.",
+      "I built backend APIs, database designs, real-time messaging, and the business logic of the desktop and tablet applications across the modules.",
     responsibilities: [
-      "Developed desktop and business application features using C#, WPF, and WinForms.",
-      "Designed and supported SQL Server database logic for operational workflows.",
-      "BMS (Building Management System): Supported workflows related to facility monitoring and operational control, helping internal users manage building-related processes and system data.",
-      "VMS (Visitor Management System): Worked on visitor access workflows, registration-related screens, database-backed visitor records, and operational features used by internal teams.",
-      "LPR (License Plate Recognition): Contributed to workflows related to vehicle identification, plate recognition integration, and operational tracking connected to monitoring and security processes.",
-      "Monitoring integrations: Supported integration work with monitoring systems, including Milestone Systems SDK, to connect application workflows with security and monitoring operations.",
-      "Built reporting and operational features where needed.",
-      "Worked on reliability and usability improvements for internal users."
+      "BMS (Building Management System): Cardholders, doors, floors, departments, access groups, behavior models, alarms, floor maps, and access reports.",
+      "VMS (Visitor Management System): Visitor registration, gates, lanes, temporary cards, face recognition and ID OCR requests, with a .NET MAUI tablet app for visitor check-in.",
+      "CCC (Command & Control Center): One operator view of buildings, entrances, gates, fences, vehicle search, black/white lists, and live camera streams.",
+      "Entrance System: Employee and visitor entry and exit dashboards with door status and camera streams.",
+      "Camera Access Requests: Time-limited camera access workflow where users request a camera and approvers grant it with a session duration and optional PTZ control. Built the ASP.NET Core 7 API on MongoDB and the WPF application, with real-time request updates over SignalR and full request history.",
+      "Setup and data entry tools: Central configuration for buildings, gates, devices, cameras, users, and permissions across all modules.",
+      "Built REST APIs with ASP.NET Web API and ASP.NET Core 7 (Swagger) on MongoDB, shared by WPF applications and the MAUI tablet app.",
+      "Packaged and deployed the BMS, VMS, CCC, and entrance control applications as Windows installers with Advanced Installer and Visual Studio Installer Projects."
     ],
     outcome:
-      "Supported reliable daily operations by helping internal users manage monitoring, access, reporting, and facility-related workflows more consistently.",
-    technologies: ["C#", "WPF", "WinForms", "SQL Server", "MongoDB", "Entity Framework", "RDLC Reports", ".NET MAUI", "Milestone Systems SDK"],
+      "Gave security operators one connected set of tools to manage buildings, visitors, entrances, and devices, with live updates across every module.",
+    technologies: ["C#", "ASP.NET Web API", "ASP.NET Core 7", "MongoDB", "SignalR", "WPF", ".NET MAUI", "RDLC Reports"],
+    confidentiality:
+      "This case study describes my technical role and responsibilities without exposing source code, private data, credentials, production screenshots, or internal business details."
+  },
+  lpr: {
+    type: "Video Analytics / Milestone Plugin",
+    title: "License Plate Recognition (LPR) — Milestone XProtect Plugin",
+    meta: "Security / Vehicle Recognition | MTI Holding | .NET Backend Developer",
+    overview:
+      "A Milestone XProtect Smart Client plugin that adds license plate and car make recognition workflows directly inside the VMS.",
+    role:
+      "I built the plugin, its MongoDB backend, real-time updates, and the analytics and reporting features.",
+    responsibilities: [
+      "Built the Smart Client plugin with the Milestone SDK: workspace, view items, side panel, and settings panel.",
+      "Implemented plate and car make records and searches.",
+      "Built black list and white list management with alarm history.",
+      "Embedded live camera views and video playback for each recognized plate.",
+      "Built analytics dashboards with LiveCharts and Excel export with EPPlus.",
+      "Pushed live plate events to operators with SignalR."
+    ],
+    outcome:
+      "Let operators recognize, search, and act on vehicles without leaving Milestone XProtect.",
+    technologies: ["C#", "WPF", "Milestone Systems SDK", "MongoDB", "SignalR", "LiveCharts", "EPPlus"],
     confidentiality:
       "This case study describes my technical role and responsibilities without exposing source code, private data, credentials, production screenshots, or internal business details."
   },
   tolling: {
     type: "Business Operations System",
     title: "Ticketing & Tolling System",
-    meta: "Tolling / Subscriptions / Operations | .NET Developer",
+    meta: "Tolling / Subscriptions / Operations | MTI Holding | .NET Backend Developer",
     overview:
-      "A business operations system for ticketing, tolling, subscriptions, reporting, and operational tracking across internal workflows.",
+      "A business operations system for ticketing, tolling, monthly and UHF subscriptions, and cashier shifts, with dynamic reporting and embedded Milestone XProtect video.",
     role:
-      "I worked on application features, database structures, business logic, reporting, and workflow support for operational business users.",
+      "I built application features, database structures, business logic, reporting, and the Milestone video integration.",
     responsibilities: [
-      "Developed application features using C# and WinForms.",
-      "Built and maintained database-backed business workflows.",
-      "Worked on subscription and ticketing logic.",
-      "Created reporting features using RDLC.",
-      "Supported operational tracking and internal business processes.",
-      "Helped improve data organization and usability for business users."
+      "Built ticketing, tolling, and subscription logic in C# and WinForms, including monthly and UHF tag subscriptions.",
+      "Implemented cashier shifts, cash receiving, refunds, and auditing workflows.",
+      "Designed SQL Server database structures with Entity Framework.",
+      "Built 20+ dynamic RDLC reports, including shift, cashier, refund, subscription, ticket count, and auditor reports.",
+      "Embedded Milestone XProtect live video streaming and playback using the Milestone Systems SDK."
     ],
     outcome:
-      "Helped organize business data, support reporting needs, and make daily ticketing, tolling, and subscription workflows easier for business users to operate.",
-    technologies: ["C#", "WinForms", "SQL Server", "Entity Framework", "RDLC Reports"],
+      "Gave operators ticketing, tolling, subscriptions, and cash control in one system, with 20+ reports and live and recorded video in the same application.",
+    technologies: ["C#", "WinForms", "SQL Server", "Entity Framework", "RDLC Reports", "Milestone Systems SDK"],
+    confidentiality:
+      "This case study describes my technical role and responsibilities without exposing source code, private data, credentials, production screenshots, or internal business details."
+  },
+  accessControl: {
+    type: "Access Control / Milestone Plugin",
+    title: "Access Control — Milestone XProtect Plugin",
+    meta: "System Integration | MTI Holding | .NET Backend Developer",
+    overview:
+      "A Milestone XProtect Smart Client workspace plugin that brings access control into the VMS.",
+    role:
+      "I built the plugin, its data layer, and its real-time updates using the Milestone Systems SDK.",
+    responsibilities: [
+      "Built the Smart Client workspace, view items, side panel, and settings panel with the Milestone SDK.",
+      "Built an access map view and user management inside the plugin.",
+      "Delivered real-time updates from SQL Server with SqlTableDependency.",
+      "Built the data layer with Entity Framework and SQL Server."
+    ],
+    outcome:
+      "Let security operators manage access control and see live access events in the same place they watch video.",
+    technologies: ["C#", "WPF", "Milestone Systems SDK", "Entity Framework", "SQL Server", "SqlTableDependency"],
+    confidentiality:
+      "This overview excludes internal configurations, customer information, proprietary implementation details, source code, and credentials."
+  },
+  videoBookmarks: {
+    type: "Video Management / Milestone Integration",
+    title: "Video Bookmarking & Retrieval",
+    meta: "Security Operations | MTI Holding | .NET Backend Developer",
+    overview:
+      "A desktop module for organizing video bookmarks and retrieving recorded video from Milestone XProtect.",
+    role:
+      "I built the backend, database, and Milestone video integration.",
+    responsibilities: [
+      "Built bookmark management for recorded video.",
+      "Retrieved recorded video from Milestone XProtect using the Milestone SDK.",
+      "Designed the SQL Server database with Entity Framework.",
+      "Delivered real-time updates with SqlTableDependency."
+    ],
+    outcome:
+      "Made recorded video faster to find and organize for operators.",
+    technologies: ["C#", "WPF", "SQL Server", "Entity Framework", "Milestone Systems SDK", "SqlTableDependency"],
+    confidentiality:
+      "This case study describes my technical role and responsibilities without exposing source code, private data, credentials, production screenshots, or internal business details."
+  },
+  gisMapping: {
+    type: "GIS / Mapping",
+    title: "GIS Mapping Tool",
+    meta: "Mapping | MTI Holding | .NET Backend Developer",
+    overview:
+      "An interactive map tool for placing and managing devices and device groups.",
+    role:
+      "I built the map features and the device data layer.",
+    responsibilities: [
+      "Built device and group placement on interactive maps with GMap.NET.",
+      "Built device editing, grouping, and map layer controls.",
+      "Stored map and device data with MongoDB and SQL Server."
+    ],
+    outcome:
+      "Let teams place and manage devices visually on a map.",
+    technologies: ["C#", "WPF", "WinForms", "GMap.NET", "MongoDB", "SQL Server"],
     confidentiality:
       "This case study describes my technical role and responsibilities without exposing source code, private data, credentials, production screenshots, or internal business details."
   },
   companyArchive: {
-    type: "Document Management / Internal Business System",
-    title: "Company Archive System",
-    meta: "Document Archiving / Internal Operations | .NET Developer",
+    type: "Internal Business System",
+    title: "Company Management & Archive System",
+    meta: "Business Operations | MTI Holding | .NET Backend Developer",
     overview:
-      "A company archive system designed to help internal teams organize, store, search, and manage company documents and structured records in a more reliable and accessible way.",
+      "An internal system for managing companies, agencies, contracts, products, and policies, with ratings and maintenance tracking.",
     role:
-      "I worked on backend and application features related to document records, database structures, search workflows, file handling, and internal user operations.",
+      "I built the backend library, database, and application logic.",
     responsibilities: [
-      "Developed features for managing archived company documents and related metadata.",
-      "Built database-backed workflows for organizing document records.",
-      "Supported search and filtering features to help users find documents faster.",
-      "Worked on file handling and document-related business logic.",
-      "Helped improve data organization and internal document accessibility.",
-      "Supported role-based or internal-user workflows where applicable, without exposing private implementation details."
+      "Built company, agency, contract, product, and policy management.",
+      "Built rating workflows for companies, employees, and projects.",
+      "Added maintenance tracking with notifications.",
+      "Designed the SQL Server database with Entity Framework in a separate backend library.",
+      "Added Excel export for business users."
     ],
     outcome:
-      "Helped internal users organize company documents more consistently, improve document access, and reduce dependency on scattered manual file tracking.",
-    technologies: ["C#", "ASP.NET Core", "SQL Server", "Entity Framework", "REST APIs", "RDLC Reports", "File Management"],
+      "Replaced scattered records with one searchable system for companies, contracts, and ratings.",
+    technologies: ["C#", "WPF", "SQL Server", "Entity Framework", "Excel Export"],
     confidentiality:
       "This case study describes my technical role and responsibilities without exposing source code, private documents, credentials, production screenshots, or internal business details."
   },
   parking: {
     type: "Operations / Parking Management System",
     title: "Parking Management System",
-    meta: "Parking Operations / Access Control | .NET Developer",
+    meta: "Parking Operations / Access Control | MTI Holding | .NET Backend Developer",
     overview:
-      "A parking management system used to support parking operations, vehicle-related workflows, access control processes, subscriptions or permits, reporting, and internal operational tracking.",
+      "A parking management system for vehicle access, permits and subscriptions, operational tracking, and reporting.",
     role:
-      "I worked on application features, database-backed workflows, reporting, and business logic that supported daily parking operations and internal users.",
+      "I built application features, database structures, business logic, and reporting for daily parking operations.",
     responsibilities: [
-      "Developed application features for parking and vehicle-related workflows.",
-      "Worked on database structures for operational tracking and parking records.",
-      "Supported subscription, permit, or access-related business logic where applicable.",
-      "Built reporting features using RDLC.",
-      "Helped improve data organization for parking operations.",
-      "Supported internal users with practical features for daily operational workflows."
+      "Built vehicle access and parking workflows in C# and WinForms.",
+      "Designed SQL Server database structures with Entity Framework for parking records.",
+      "Implemented permit and subscription business logic.",
+      "Built operational reports with RDLC."
     ],
     outcome:
-      "Helped support more organized parking operations, clearer vehicle-related records, and reporting workflows for business users.",
-    technologies: ["C#", "WinForms", "SQL Server", "Entity Framework"],
+      "Gave parking operators organized vehicle records, permit management, and reporting in one system.",
+    technologies: ["C#", "WinForms", "SQL Server", "Entity Framework", "RDLC Reports"],
     confidentiality:
       "This case study describes my technical role and responsibilities without exposing source code, private data, credentials, production screenshots, or internal business details."
   }
