@@ -90,26 +90,6 @@ const projectDetails = {
     confidentiality:
       "This case study describes my technical role and responsibilities without exposing source code, private data, credentials, production screenshots, or internal business details."
   },
-  accessControl: {
-    type: "Access Control / Milestone Plugin",
-    title: "Access Control — Milestone XProtect Plugin",
-    meta: "System Integration | MTI Holding | .NET Backend Developer",
-    overview:
-      "A Milestone XProtect Smart Client workspace plugin that brings access control into the VMS.",
-    role:
-      "I built the plugin, its data layer, and its real-time updates using the Milestone Systems SDK.",
-    responsibilities: [
-      "Built the Smart Client workspace, view items, side panel, and settings panel with the Milestone SDK.",
-      "Built an access map view and user management inside the plugin.",
-      "Delivered real-time updates from SQL Server with SqlTableDependency.",
-      "Built the data layer with Entity Framework and SQL Server."
-    ],
-    outcome:
-      "Let security operators manage access control and see live access events in the same place they watch video.",
-    technologies: ["C#", "WPF", "Milestone Systems SDK", "Entity Framework", "SQL Server", "SqlTableDependency"],
-    confidentiality:
-      "This overview excludes internal configurations, customer information, proprietary implementation details, source code, and credentials."
-  },
   videoBookmarks: {
     type: "Video Management / Milestone Integration",
     title: "Video Bookmarking & Retrieval",
@@ -173,7 +153,7 @@ const projectDetails = {
   parking: {
     type: "Operations / Parking Management System",
     title: "Parking Management System",
-    meta: "Parking Operations / Access Control | MTI Holding | .NET Backend Developer",
+    meta: "Parking Operations / Vehicle Access | MTI Holding | .NET Backend Developer",
     overview:
       "A parking management system for vehicle access, permits and subscriptions, operational tracking, and reporting.",
     role:
